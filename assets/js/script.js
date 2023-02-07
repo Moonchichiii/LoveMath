@@ -1,9 +1,8 @@
-
-    document.addEventListener("DOMContentLoaded" , function){
+    document.addEventListener("DOMContentLoaded" , function() {
     let buttons = document.getElementsByTagName("button");
     
     for (let button of buttons){
-        button.addEventListener("click", function() {
+        button.addEventListener('click' , function() {
             if (this.getAttribute("data-type") === "submit")
             alert("You clicked Submit");
         } else {
@@ -58,7 +57,7 @@ function incrementWrongAnswer() {
 function displayAdditionQuestion(operand1, operand2) {
 document.getElementById('operand1').textContent = operand1;
 document.getElementById('operand2').textContent = operand2;
-document.getElementById('operator').textContent = "+";
+document.getElementById('operator').textContent = operator;
 
 }
 
